@@ -22,7 +22,7 @@ source $HOME/.config/nvim/plug-config/vim-surruound.vim
 source $HOME/.config/nvim/plug-config/quickscope.vim
 source $HOME/.config/nvim/plug-config/floaterm.vim
 source $HOME/.config/nvim/plug-config/goyo.vim
-source $HOME/.config/nvim/plug-config/multicursor.vim
+" source $HOME/.config/nvim/plug-config/multicursor.vim
 
 " MAPPINGS
 source $HOME/.config/nvim/keys/which-key.vim

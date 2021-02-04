@@ -1,5 +1,5 @@
 " Adjust Width
-let g:goyo_width=120
+let g:goyo_width=70
 " Goyo plugin makes text more readable when writing prose:
 	" map <leader>f :Goyo \| set bg=light \| set linebreak<CR>
 

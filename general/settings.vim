@@ -6,13 +6,13 @@ set autoread " trigger `autoread` when files changes on disk
   " autocmd FileChangedShellPost * " notification after file change
   "   \ echohl WarningMsg | echo "File changed on disk. Buffer reloaded." | echohl None
 set complete+=kspell                    " set spell spelllang=en_gb
-autocmd BufRead,BufNewFile *.tex setlocal spell spelllang=en_gb
+autocmd BufRead,BufNewFile *.tex *.md setlocal spell spelllang=en_gb
 syntax enable                           " Enables syntax highlighing
 set hidden                              " Required to keep multiple buffers open multiple buffers
 "set nowrap                              " Display long lines as just one line
 set linebreak                           " Prenents words from breaking over line
-set breakindent                         " Indent wrapped lines
-let &showbreak='  '                   " Indent amount
+" set breakindent                         " Indent wrapped lines
+" let &showbreak='  '                   " Indent amount
 set encoding=UTF-8                      " The encoding displayed
 set pumheight=10                        " Makes popup menu smaller
 set fileencoding=utf-8                  " The encoding written to file
@@ -33,7 +33,7 @@ set smartindent                         " Makes indenting smart
 set laststatus=0                        " Always display the status line
 set relativenumber                      " Relative Line numbers
 set number                              " Line numbers
-set cursorline                          " Enable highlighting of the current line
+" set cursorline                          " Enable highlighting of the current line
 set background=dark                     " tell vim what the background color looks like
 set showtabline=2                       " Always show tabs
 set noshowmode                          " We don't need to see things like -- INSERT --
