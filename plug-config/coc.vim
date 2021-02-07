@@ -1,9 +1,10 @@
- 
+
 let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-pairs',
   \ 'coc-floaterm',
-  \ 'coc-vimtex',
+  \ 'coc-css',
+  \ 'coc-html',
   \ 'coc-explorer',
   \ 'coc-json',
   \ 'coc-yank',
@@ -13,14 +14,13 @@ let g:coc_global_extensions = [
   "   \ 'coc-actions',
   "   \ 'coc-emmet',
   "   \ 'coc-tsserver',
-  "   \ 'coc-html',
-  "   \ 'coc-css',
   "   \ 'coc-cssmodules',
   "   \ 'coc-yaml',
   "   \ 'coc-python',
   "   \ 'coc-svg',
   "   \ 'coc-flutter',
   "   \ 'coc-xml',
+  " \ 'coc-vimtex',
 
 
 
@@ -110,5 +110,3 @@ let g:coc_explorer_global_presets = {
 "nmap <silent> <space>e :CocCommand explorer<CR>
 " nnoremap <silent> <leader>e :CocCommand explorer<CR>
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
-
-

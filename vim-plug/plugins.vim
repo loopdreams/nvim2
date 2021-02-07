@@ -30,17 +30,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 " Better Syntax Support
     " Plug 'sheerun/vim-polyglot'
 
-" Spelling
-    " Plug 'kopischke/unite-spell-suggest'
-
-" VimWiki
-    " Plug 'vimwiki/vimwiki'
-
 " Templates
     " Plug 'KabbAmine/vBox.vim'
     " Plug 'tibabit/vim-templates'
     " Plug 'aperezdc/vim-template'
-
 
 " FILE MANAGEMENT
 
@@ -50,11 +43,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 " File Explorer
     Plug 'ryanoasis/vim-devicons' "adds icons to coc-explorer
     Plug 'vifm/vifm.vim'
-    " Plug 'scrooloose/nerdtree'
-    " Plug 'preservim/nerdtree'
-    " Plug 'Xuyuanp/nerdtree-git-plugin'
-    " Plug 'tsony-tsonev/nerdtree-git-plugin'
-    " Plug 'tiagofumo/vim-nerdtree-syntax-highlight' " Is this required?
 
 " Fuzzy Finder
     Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -106,10 +94,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 " Undo tree
     Plug 'mbbill/undotree'
 
-" Multiple Cursors
- " Plug 'mg979/vim-visual-multi', {'branch': 'master'}
-  " Plug 'terryma/vim-multiple-cursors'
-
 " Writing mode
     Plug 'junegunn/goyo.vim'
     Plug 'reedes/vim-pencil'
@@ -119,12 +103,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 " Browser Support
     Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 
-
 " MAPPINGS
 
 " Look Up Key Bindings
     Plug 'liuchengxu/vim-which-key'
-
 
 " APPEARANCE
 

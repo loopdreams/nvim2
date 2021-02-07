@@ -1,6 +1,3 @@
-" NOTES
-" Although anything in ~/.config/nvim/plugin will automatically be sourced, I find it convenient to individually source config files so as to be able to easily comment out config files that are not needed while leaving them intact.
-
 " GENERAL
 source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/vim-plug/plugins.vim
@@ -16,13 +13,12 @@ source $HOME/.config/nvim/plug-config/coc.vim
 source $HOME/.config/nvim/plug-config/ultisnips.vim
 source $HOME/.config/nvim/plug-config/autopairs.vim
 source $HOME/.config/nvim/plug-config/vim-surruound.vim
-" source $HOME/.config/nvim/plug-config/deoplete.vim
+source $HOME/.config/nvim/plug-config/deoplete.vim
 
 " ADDITIONAL FUNCTIONS
 source $HOME/.config/nvim/plug-config/quickscope.vim
 source $HOME/.config/nvim/plug-config/floaterm.vim
 source $HOME/.config/nvim/plug-config/goyo.vim
-" source $HOME/.config/nvim/plug-config/multicursor.vim
 
 " MAPPINGS
 source $HOME/.config/nvim/keys/which-key.vim

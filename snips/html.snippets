@@ -1,0 +1,323 @@
+# HTML Doctype 5
+snippet doct5
+<!DOCTYPE HTML>
+endsnippet
+
+snippet href
+href="${1:#}"
+endsnippet
+
+snippet a
+<a href="${1:#}">${0:$1}</a>
+endsnippet
+
+snippet a.
+<a class="${1}" href="${2:#}">${0:$1}</a>
+endsnippet
+
+snippet a#
+<a id="${1}" href="${2:#}">${0:$1}</a>
+endsnippet
+
+snippet a:ext
+<a href="http://${1:example.com}">${0:$1}</a>
+endsnippet
+
+snippet a:mail
+<a href="mailto:${1:joe@example.com}?subject=${2:feedback}">${0:email me}</a>
+endsnippet
+
+snippet article
+<article>
+	${0}
+</article>
+endsnippet
+snippet b
+<b>${0}</b>
+endsnippet
+
+snippet blockquote
+<blockquote>
+	${0}
+</blockquote>
+endsnippet
+
+snippet body
+<body>
+	${0}
+</body>
+endsnippet
+
+snippet br
+<br>
+endsnippet
+
+snippet div
+<div>
+	${0}
+</div>
+endsnippet
+
+snippet div.
+<div class="${1}">
+	${0}
+</div>
+endsnippet
+
+snippet div#
+<div id="${1}">
+	${0}
+</div>
+endsnippet
+
+snippet em
+<em>${0}</em>
+endsnippet
+
+snippet figcaption
+<figcaption>${0}</figcaption>
+endsnippet
+
+snippet figure
+<figure>${0}</figure>
+endsnippet
+
+snippet figure#
+<figure id="${1}">
+	${0}
+</figure>
+endsnippet
+
+snippet figure.
+<figure class="${1}">
+	${0}
+</figure>
+endsnippet
+
+snippet footer
+<footer>
+	${0}
+</footer>
+endsnippet
+
+snippet footer.
+<footer class="${1}">
+	${0}
+</footer>
+endsnippet
+
+snippet footer#
+<footer id="${1}">
+	${0}
+</footer>
+endsnippet
+
+snippet h1
+<h1>${0}</h1>
+endsnippet
+
+snippet h1.
+<h1 class="${1}">${0}</h1>
+endsnippet
+
+snippet h1#
+<h1 id="${1}">${0}</h1>
+endsnippet
+
+snippet h2
+<h2>${0}</h2>
+endsnippet
+
+snippet h2.
+<h2 class="${1}">${0}</h2>
+endsnippet
+
+snippet h2#
+<h2 id="${1}">${0}</h2>
+endsnippet
+
+snippet h3
+<h3>${0}</h3>
+endsnippet
+
+snippet h3.
+<h3 class="${1}">${0}</h3>
+endsnippet
+
+snippet h3#
+<h3 id="${1}">${0}</h3>
+endsnippet
+
+snippet h4
+<h4>${0}</h4>
+endsnippet
+
+snippet h4.
+<h4 class="${1}">${0}</h4>
+endsnippet
+
+snippet h4#
+<h4 id="${1}">${0}</h4>
+endsnippet
+
+snippet h5
+<h5>${0}</h5>
+endsnippet
+
+snippet h5.
+<h5 class="${1}">${0}</h5>
+endsnippet
+
+snippet h5#
+<h5 id="${1}">${0}</h5>
+endsnippet
+
+snippet h6
+<h6>${0}</h6>
+endsnippet
+
+snippet h6.
+<h6 class="${1}">${0}</h6>
+endsnippet
+
+snippet h6#
+<h6 id="${1}">${0}</h6>
+endsnippet
+
+snippet head
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<title>${1:`substitute(vim_snippets#Filename('', 'Page Title'), '^.', '\u&', '')`}</title>
+	${0}
+</head>
+endsnippet
+
+snippet hr
+<hr>
+endsnippet
+
+snippet html
+<html>
+${0}
+</html>
+endsnippet
+
+snippet html5
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>${1:`substitute(vim_snippets#Filename('', 'Page Title'), '^.', '\u&', '')`}</title>
+		${2:link}
+	</head>
+	<body>
+		${0:body}
+	</body>
+</html>
+endsnippet
+
+snippet li
+<li>${0}</li>
+endsnippet
+
+snippet li.
+<li class="${1}">${0}</li>
+endsnippet
+
+snippet li+
+<li>${1}</li>
+li+
+endsnippet
+
+snippet lia
+<li><a href="${0:#}">${1}</a></li>
+endsnippet
+
+snippet lia+
+<li><a href="${2:#}">${1}</a></li>
+lia+
+
+endsnippet
+
+snippet nav
+<nav>
+	${0}
+</nav>
+endsnippet
+
+snippet nav.
+<nav class="${1}">
+	${0}
+</nav>
+
+endsnippet
+
+snippet ol
+<ol>
+	${0}
+</ol>
+endsnippet
+
+snippet ol.
+<ol class="${1}">
+	${0}
+</ol>
+endsnippet
+
+snippet ol#
+<ol id="${1}">
+	${0}
+</ol>
+endsnippet
+
+snippet ol+
+<ol>
+	<li>${1}</li>
+	li+${0}
+</ol>
+
+endsnippet
+
+snippet p
+<p>${0}</p>
+endsnippet
+
+snippet p.
+<p class="${1}">${0}</p>
+endsnippet
+
+snippet p#
+<p id="${1}">${0}</p>
+
+endsnippet
+
+snippet title=
+title="${1}"
+endsnippet
+
+snippet ul
+<ul>
+	${0}
+</ul>
+endsnippet
+
+snippet ul.
+<ul class="${1}">
+	${0}
+</ul>
+endsnippet
+
+snippet ul#
+<ul id="${1}">
+	${0}
+</ul>
+endsnippet
+
+snippet ul+
+<ul>
+	<li>${1}</li>
+	li+${0}
+</ul>
+endsnippet
