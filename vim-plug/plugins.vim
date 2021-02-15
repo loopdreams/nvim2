@@ -113,6 +113,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 " Themes
     Plug 'morhetz/gruvbox'  " Source grubox theme
     Plug 'junegunn/seoul256.vim'
+    Plug 'NLKNguyen/papercolor-theme'
+    Plug 'sonph/onehalf', {'rtp': 'vim'}
+    Plug 'relastle/bluewery.vim'
     " Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
     " Plug 'joshdick/onedark.vim'
 
