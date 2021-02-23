@@ -37,6 +37,7 @@ let g:which_key_map['b'] = [ ':vsp $BIB'             , 'Bibfile' ]
 let g:which_key_map['c'] = [ ':w! | :!compiler %'    , 'Compile' ]
 let g:which_key_map['p'] = [ ':!opout %'             , 'Pdf' ]
 let g:which_key_map['j'] = [ ':Goyo | :Limelight!! | :TogglePencil'      , 'Goyo' ]
+let g:which_key_map['m'] = [ ':!lagrange % &'        , 'Gemini Preview']
 let g:which_key_map.u = 'undo'
 " let g:which_key_map['i'] = [ 'VimtexTocOpen'         , 'index' ]
 " let g:which_key_map['b'] = [ 'VimtexCompile'         , 'build' ]
@@ -63,7 +64,7 @@ let g:which_key_map.P = {
 let g:which_key_map.t = {
       \ 'name' : '+templates' ,
       \ 'p' : [':read ~/.config/nvim/templates/PhilPaper.tex'           , 'PhilPaper.tex'],
-      \ 'l' : [':read ~/.config/nvim/templates/Letter.tex'           , 'Letter.tex'],
+      \ 'l' : [':read ~/.config/nvim/templates/Letter2.tex'           , 'Letter.tex'],
       \ 'g' : [':read ~/.config/nvim/templates/Glossary.tex'           , 'Glossary.tex'],
       \ 'h' : [':read ~/.config/nvim/templates/HandOut.tex'           , 'HandOut.tex'],
       \ 'b' : [':read ~/.config/nvim/templates/PhilBeamer.tex'           , 'PhilBeamer.tex'],

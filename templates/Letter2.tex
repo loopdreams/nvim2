@@ -1,0 +1,129 @@
+\documentclass[oneside]{scrartcl}
+
+%%%%%%%%%%
+%% Testing
+\usepackage{blindtext}
+
+%%%%%%%%%%
+%% Should be in a .sty or .cls file
+%% And I know it all breaks on a secound page but time isn't endless :(
+
+%% Packages
+\usepackage{geometry}
+\usepackage{calc}
+\usepackage{titlesec}
+\usepackage{tikz}
+\usetikzlibrary{calc}
+
+%% Getters
+\newcommand{\thesendercompany}{}% Sender's Info
+\newcommand{\thesenderposition}{}
+\newcommand{\thesender}{}
+\newcommand{\thesenderlineone}{}
+\newcommand{\thesenderlinetwo}{}
+\newcommand{\thesenderlinethree}{}
+\newcommand{\thesenderphonenumone}{}
+\newcommand{\thesenderphonenumtwo}{}
+\newcommand{\thesenderemail}{}
+\newcommand{\thesenderwebsite}{}
+
+\newcommand{\therecipientcompany}{}% Recipient's Info
+\newcommand{\therecipientlocation}{}
+\newcommand{\therecipientposition}{}
+\newcommand{\therecipient}{}
+
+%% Setters
+\newcommand{\sendercompany}[1]{\renewcommand{\thesendercompany}{#1}}% Sender's Info
+\newcommand{\senderposition}[1]{\renewcommand{\thesenderposition}{#1}}
+\newcommand{\sender}[1]{\author{#1}\renewcommand{\thesender}{#1}}
+\newcommand{\senderlineone}[1]{\renewcommand{\thesenderlineone}{#1}}
+\newcommand{\senderlinetwo}[1]{\renewcommand{\thesenderlinetwo}{#1}}
+\newcommand{\senderlinethree}[1]{\renewcommand{\thesenderlinethree}{#1}}
+\newcommand{\senderphonenumone}[1]{\renewcommand{\thesenderphonenumone}{#1}}
+\newcommand{\senderphonenumtwo}[1]{\renewcommand{\thesenderphonenumtwo}{#1}}
+\newcommand{\senderemail}[1]{\renewcommand{\thesenderemail}{#1}}
+\newcommand{\senderwebsite}[1]{\renewcommand{\thesenderwebsite}{#1}}
+
+\newcommand{\recipientcompany}[1]{\renewcommand{\therecipientcompany}{#1}}% Recipient's Info
+\newcommand{\recipientlocation}[1]{\renewcommand{\therecipientlocation}{#1}}
+\newcommand{\recipientposition}[1]{\renewcommand{\therecipientposition}{#1}}
+\newcommand{\recipient}[1]{\renewcommand{\therecipient}{#1}}
+
+%% Format the cool side thing. This should have a load of checks to see if
+%% elements exist and only print them if they do but I'm not gonna do that...
+\newcommand{\sidething}
+{
+  \begin{minipage}{0.95\oddsidemargin}
+  \normalfont\thesenderlineone\\
+  \thesenderlinetwo\\
+  \thesenderlinethree\\
+  \thesenderphonenumone\\
+  \thesenderphonenumtwo\\
+  \thesenderemail\\% This should be in a {mailto:\...} but it's a fake email
+  \thesenderwebsite%
+  \end{minipage}
+}
+
+%% Reformat title
+\renewcommand{\maketitle}
+{
+  {\Huge\thesendercompany}\\\vspace*{2cm}\\
+  {\bfseries\therecipientposition},\\
+  \therecipientcompany\\
+  \therecipientlocation\\
+  \therecipient\vspace{1cm}
+  \tikz[remember picture, overlay]%% Add the cool side thing
+    \node at ($(current page.west)+(2.5,0)$)
+      {\sidething};
+}
+
+%% Format a signature % blank space in place of a digital signature
+\newcommand{\signature}
+{
+  \vspace*{1.5cm}
+  {\thesender\\
+  \thesenderposition}
+
+  \hrulefill%
+}%% Ignore the errors this throws, they don't matter :)
+
+%% Formatting
+\setcounter{secnumdepth}{0}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+\geometry{a4paper,bottom=3cm,top=2.5cm,left=6cm,right=1.5cm}
+\linespread{1.3}
+
+%%%%%%%%%%
+%% Normal document stuff
+
+\title{A message to people}
+\date{\today}
+
+\sender{John Smith}
+\sendercompany{A Company}
+\senderposition{Head Time Waster}
+\senderlineone{Plot 1234, Nowhere}
+\senderlinetwo{Road Street, Left}
+\senderlinethree{Comany Name?}
+\senderphonenumone{+123 456 789}
+\senderphonenumtwo{+123 456 789}
+\senderemail{mutton@mail.com}
+\senderwebsite{website.com}
+
+\recipient{Jane Smith}
+\recipientcompany{Another Company}
+\recipientposition{Good Worker Bee}
+\recipientlocation{A little to the left}
+
+
+\begin{document}
+\maketitle
+
+\blindtext%
+
+\blindtext%
+
+\signature%
+\end{document}

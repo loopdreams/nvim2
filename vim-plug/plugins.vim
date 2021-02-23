@@ -116,6 +116,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'NLKNguyen/papercolor-theme'
     Plug 'sonph/onehalf', {'rtp': 'vim'}
     Plug 'relastle/bluewery.vim'
+    Plug 'arcticicestudio/nord-vim'
     " Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
     " Plug 'joshdick/onedark.vim'
 
