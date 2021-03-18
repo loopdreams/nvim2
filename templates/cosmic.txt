@@ -1,0 +1,23 @@
+Transmission Log - Orestes
+Author:
+
+---------------------------------------------------------------
+Auto-generating preface...
+
+-END-OF-PREFACE-
+---------------------------------------------------------------
+
+
+
+
+----------------------------------------------------------------
+Complied by the Werner H. Young Terminal Emulator
+
+Info: Simple A.I., designed on-site for executing
+systems maintenance tasks and exchanging messages between
+the Orestes outpost and the Arsinoe.
+
+Built by Werner Young (2113-2151).
+
+Names of persons have been masked to protect their identity.
+----------------------------------------------------------------

@@ -72,7 +72,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     " Plug 'honza/vim-snippets'
 
 " Auto pairs and surround for '(' '[' '{' etc.
-    Plug 'jiangmiao/auto-pairs'
+    " Plug 'jiangmiao/auto-pairs'
     Plug 'tpope/vim-surround'
     Plug 'machakann/vim-sandwich'
     Plug 'tpope/vim-repeat'
@@ -101,7 +101,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vimwiki/vimwiki'
 
 " Browser Support
-    Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
+    " Plug 'glacambre/firenvim', { 'do': { _ -> firenvim#install(0) } }
 
 " MAPPINGS
 

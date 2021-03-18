@@ -71,6 +71,7 @@ let g:which_key_map.t = {
       \ 's' : [':read ~/.config/nvim/templates/SubFile.tex'           , 'SubFile.tex'],
       \ 'r' : [':read ~/.config/nvim/templates/Root.tex'           , 'Root.tex'],
       \ 'm' : [':read ~/.config/nvim/templates/yamlheader.md'           , 'Header Markdown'],
+      \ 'c' : [':read ~/.config/nvim/templates/cosmic.txt'           , 'Cosmic Voyage'],
       \ }
 
 " Sessions

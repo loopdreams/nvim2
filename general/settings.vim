@@ -39,6 +39,7 @@ set showtabline=2                       " Always show tabs
 set noshowmode                          " We don't need to see things like -- INSERT --
 set nobackup                            " This is recommended by coc
 set nowritebackup                       " This is recommended by coc
+set colorcolumn=80
 " set backupdir=~/.config/nvim/backup
 " set directory=~/.config/nvim/swap//
 set scrolloff=7
@@ -61,6 +62,8 @@ filetype plugin indent on
 	autocmd BufWritePre * %s/\s\+$//e
 	autocmd BufWritepre * %s/\n\+\%$//e
 
+" When shortcut files are updated, renew bash and ranger configs with new material:
+	autocmd BufWritePost bm-files,bm-dirs !shortcuts
 " Run xrdb whenever Xdefaults or Xresources are updated.
 	autocmd BufWritePost *Xresources,*Xdefaults !xrdb %
 " Update binds when sxhkdrc is updated.

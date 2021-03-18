@@ -13,9 +13,9 @@ inoremap <expr> <c-k> ("\<C-p>")
 nmap <CR> <plug>(vimtex-context-menu)
 
 " TAB in general mode will move to text buffer
-nnoremap <TAB> :bnext<CR>
+nnoremap <c-k> :bnext<CR>
 " SHIFT-TAB will go back
-nnoremap <M-TAB> :bprevious<CR>
+nnoremap <c-j> :bprevious<CR>
 
 " <TAB>: completion.
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
@@ -26,11 +26,11 @@ vnoremap < <gv
 nnoremap > <S-v>><esc>
 nnoremap < <S-v><<esc>
 
-" Better window navigation
-nnoremap <C-h> <C-w>h
-nnoremap <C-j> <C-w>j
-nnoremap <C-k> <C-w>k
-nnoremap <C-l> <C-w>l
+" " Better window navigation
+" nnoremap <C-h> <C-w>h
+" nnoremap <C-j> <C-w>j
+" nnoremap <C-k> <C-w>k
+" nnoremap <C-l> <C-w>l
 
 " Horizontal line movement
 nnoremap <S-h> g^
