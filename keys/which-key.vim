@@ -27,8 +27,8 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 let g:which_key_map[','] = [ 'Startify'              , 'start screen' ]
 let g:which_key_map['d'] = [ ':bd!'                  , 'delete buffer']
 let g:which_key_map['e'] = [ ':CocCommand explorer'  , 'explorer' ]
-let g:which_key_map['f'] = [ ':BLines'               , 'find' ]
-let g:which_key_map['F'] = [ ':Files ~'              , 'home files' ]
+" let g:which_key_map['f'] = [ ':BLines'               , 'find' ]
+" let g:which_key_map['F'] = [ ':Files ~'              , 'home files' ]
 let g:which_key_map['k'] = [ ':CocDisable'           , 'kill coc' ]
 let g:which_key_map['r'] = [ ':CocEnable'            , 'restore coc' ]
 let g:which_key_map['q'] = [ ':wqa'                  , 'quit' ]
@@ -46,7 +46,14 @@ let g:which_key_map.u = 'undo'
 " let g:which_key_map['l'] = [ ':VimtexErrors'         , 'log' ]
 
 " Group mappings
-
+" Telescope
+let g:which_key_map.f = {
+      \ 'name' : '+telescope' ,
+      \ 'f' : [':Telescope find_files'  , 'find files'],
+      \ 'g' : [':Telescope live_grep'   , 'live grep'],
+      \ 'b' : [':Telescope buffers'     , 'buffers'],
+      \ 'h' : [':Telescope help_tags'   , 'help'],
+      \}
 " Pandoc
 let g:which_key_map.P = {
       \ 'name' : '+pandoc' ,
@@ -68,7 +75,7 @@ let g:which_key_map.t = {
       \ 'g' : [':read ~/.config/nvim/templates/Glossary.tex'           , 'Glossary.tex'],
       \ 'h' : [':read ~/.config/nvim/templates/HandOut.tex'           , 'HandOut.tex'],
       \ 'b' : [':read ~/.config/nvim/templates/PhilBeamer.tex'           , 'PhilBeamer.tex'],
-      \ 's' : [':read ~/.config/nvim/templates/SubFile.tex'           , 'SubFile.tex'],
+      \ 's' : [':read ~/.config/nvim/templates/spoolfive'           , 'spoolfive header'],
       \ 'r' : [':read ~/.config/nvim/templates/Root.tex'           , 'Root.tex'],
       \ 'm' : [':read ~/.config/nvim/templates/yamlheader.md'           , 'Header Markdown'],
       \ 'c' : [':read ~/.config/nvim/templates/cosmic.txt'           , 'Cosmic Voyage'],

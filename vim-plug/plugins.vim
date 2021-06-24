@@ -117,6 +117,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'sonph/onehalf', {'rtp': 'vim'}
     Plug 'relastle/bluewery.vim'
     Plug 'arcticicestudio/nord-vim'
+    Plug 'franbach/miramare'
     " Plug 'HerringtonDarkholme/yats.vim' " TS Syntax
     " Plug 'joshdick/onedark.vim'
 
@@ -124,10 +125,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
 
-
-
-
-
+" Telescope
+    Plug 'nvim-lua/popup.nvim'
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim'
 
 call plug#end()
 

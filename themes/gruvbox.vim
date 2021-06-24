@@ -1,4 +1,4 @@
- colorscheme gruvbox
+ colorscheme miramare
 " colorscheme seoul256
 " set background=dark
 hi! Normal ctermbg=NONE guibg=NONE

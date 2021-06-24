@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <title>Spool-Five</title>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+
+<body>
+  <div class=head>
+    <h1>Spool <span style="color:#fddcdc;">Fi</span>v<span style="color:#fddcdc;">e</span>
+    </h1>
+    <ul>
+      <li><a href="index.html"><b>Home</b></a></li>
+      <li><a href="archive.html"><b>Posts</b></a></li>
+      <li><a href="music.html"><b>Music</b></a></li>
+      <li><a href="about.html"><b>About</b></a></li>
+    </ul>
+  </div>
+  <br>
+  <br>
+
+  CONTENT
+
+  <hr>
+  <div class=footer>
+    <a href="https://spool-five.com/gmi/index.html"> gmi mode | </a>
+    <a href="https://spool-five.com/rss.xml" target="_blank"> rss feed | </a>
+    <a href="mailto:eoin@spool-five.com">email | </a>
+    <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">license</a>
+  </div>
+</body>
+
+</html>
