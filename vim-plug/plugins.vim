@@ -130,6 +130,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'nvim-lua/plenary.nvim'
     Plug 'nvim-telescope/telescope.nvim'
 
+" Org syntax highlighting
+    Plug 'axvr/org.vim'
+
+
+
 call plug#end()
 
 " Automatically install missing plugins on startup

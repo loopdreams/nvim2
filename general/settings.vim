@@ -82,4 +82,5 @@ filetype plugin indent on
 	autocmd BufRead,BufNewFile *.ms,*.me,*.mom,*.man set filetype=groff
 	autocmd BufRead,BufNewFile *.tex set filetype=tex
 	autocmd BufRead,BufNewFile *.gmi set filetype=markdown
+	" autocmd BufRead,BufNewFile *.org set filetype=markdown
 au! BufWritePost $MYVIMRC source %      " auto source when writing to init.vm alternatively you can run :source $MYVIMRC

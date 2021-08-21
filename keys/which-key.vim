@@ -34,10 +34,8 @@ let g:which_key_map['r'] = [ ':CocEnable'            , 'restore coc' ]
 let g:which_key_map['q'] = [ ':wqa'                  , 'quit' ]
 let g:which_key_map['w'] = [ ':w'                    , 'write' ]
 let g:which_key_map['b'] = [ ':vsp $BIB'             , 'Bibfile' ]
-let g:which_key_map['c'] = [ ':w! | :!compiler %'    , 'Compile' ]
 let g:which_key_map['p'] = [ ':!opout %'             , 'Pdf' ]
-let g:which_key_map['j'] = [ ':Goyo | :Limelight!! | :TogglePencil'      , 'Goyo' ]
-let g:which_key_map['m'] = [ ':!lagrange % &'        , 'Gemini Preview']
+let g:which_key_map['t'] = [ ':Goyo | :Limelight!! | :TogglePencil'      , 'Goyo' ]
 let g:which_key_map.u = 'undo'
 " let g:which_key_map['i'] = [ 'VimtexTocOpen'         , 'index' ]
 " let g:which_key_map['b'] = [ 'VimtexCompile'         , 'build' ]
@@ -54,9 +52,11 @@ let g:which_key_map.f = {
       \ 'b' : [':Telescope buffers'     , 'buffers'],
       \ 'h' : [':Telescope help_tags'   , 'help'],
       \}
-" Pandoc
-let g:which_key_map.P = {
-      \ 'name' : '+pandoc' ,
+" Export
+let g:which_key_map.m = {
+      \ 'name' : '+export' ,
+      \ 'g' : [':!lagrange % &'         , 'open in Lagrange'],
+      \ 'e' : [':!compiler %'           , 'compile'],
       \ 'w' : [':Pandoc docx'           , 'to word from open'],
       \ 'm' : [':Pandoc md'             , 'to markdown from open'],
       \ 'h' : [':Pandoc html'           , 'to html from open'],
