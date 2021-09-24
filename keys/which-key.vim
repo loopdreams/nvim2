@@ -68,7 +68,7 @@ let g:which_key_map.m = {
       " \ 'm' : [':SDelete!'              , 'to markdown from file'],
 
 " Templates
-let g:which_key_map.t = {
+let g:which_key_map.o = {
       \ 'name' : '+templates' ,
       \ 'p' : [':read ~/.config/nvim/templates/PhilPaper.tex'           , 'PhilPaper.tex'],
       \ 'l' : [':read ~/.config/nvim/templates/Letter2.tex'           , 'Letter.tex'],
