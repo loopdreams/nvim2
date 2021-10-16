@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/home/eoin/gemini/life'
+let g:netrw_dirhist_6='/home/eoin/gemini'
+let g:netrw_dirhist_5='/home/eoin'
+let g:netrw_dirhist_4='/home/eoin/vimwiki'
+let g:netrw_dirhist_3='/home/eoin/vimwiki/blog'
+let g:netrw_dirhist_2='/home/eoin/vimwiki'
+let g:netrw_dirhist_1='/home/eoin/vimwiki/cfdh'
+let g:netrw_dirhist_0='/home/eoin/vimwiki'
+let g:netrw_dirhist_9='/home/eoin/vimwiki/cosmic'
+let g:netrw_dirhist_8='/home/eoin/vimwiki'

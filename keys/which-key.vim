@@ -45,13 +45,13 @@ let g:which_key_map.u = 'undo'
 
 " Group mappings
 " Telescope
-" let g:which_key_map.f = {
-"      \ 'name' : '+telescope' ,
-"      \ 'f' : [':Telescope find_files'  , 'find files'],
-"      \ 'g' : [':Telescope live_grep'   , 'live grep'],
-"      \ 'b' : [':Telescope buffers'     , 'buffers'],
-"      \ 'h' : [':Telescope help_tags'   , 'help'],
-"      \}
+let g:which_key_map.f = {
+     \ 'name' : '+telescope' ,
+     \ 'f' : [':Telescope find_files'  , 'find files'],
+     \ 'g' : [':Telescope live_grep'   , 'live grep'],
+     \ 'b' : [':Telescope buffers'     , 'buffers'],
+     \ 'h' : [':Telescope help_tags'   , 'help'],
+     \}
 " Fzf
 
 let g:which_key_map.z = {

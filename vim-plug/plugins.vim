@@ -126,9 +126,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline-themes'
 
 " Telescope
-"    Plug 'nvim-lua/popup.nvim'
-"   Plug 'nvim-lua/plenary.nvim'
-"    Plug 'nvim-telescope/telescope.nvim'
+   Plug 'nvim-lua/popup.nvim'
+   Plug 'nvim-lua/plenary.nvim'
+   Plug 'nvim-telescope/telescope.nvim'
 
 " Org syntax highlighting
     Plug 'axvr/org.vim'
